@@ -177,7 +177,9 @@ ifeq ($(USE_MEX), 1)
     MEX_OBJECTS += $(SOLVER_TARGET)
     MEX_DEPENDENCIES:=$(foreach file, $(MEX_OBJECTS), $(file).dep)
     -include $(MEX_DEPENDENCIES)
-     
+
+    MEX_DEFINES := $(DEFINES)
+
     MEX_INCLUDES :=$(INCLUDES) -I$(MATLAB_DIR)/extern/include
      
     MATLAB_LIB_DIR:=$(shell dirname `find $(MATLAB_DIR)/bin -name libmex.$(SHARED_LIB_EXT)`)

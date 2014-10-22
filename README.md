@@ -77,7 +77,7 @@ Run the code using
 
 See Section 4 for all possible parameters.
 
-## 2.1. GUI with live results
+## 2.1 GUI with live results
 
 If you specify only one image, e.g.
 
@@ -92,7 +92,7 @@ you will get a GUI where one can change the main regularization parameters *lamb
 - <kbd>s</kbd>: Save current result image
 - <kbd>ESC</kbd>: Exit
 
-## 2.2. Batch processing
+## 2.2 Batch processing
 
 You can provide more than one image if you like, e.g.
 
@@ -116,7 +116,7 @@ For example, press **'s'** to save the result for the current frame.
 
 *Note: This requires that the camera is recognizable using OpenCV. This worked fine on Linux, but didn't work on Mac OS X on our test system.*
 
-## 2.4. Running the examples
+## 2.4 Running the examples
 
 ### On images
 
@@ -158,7 +158,7 @@ To use the **MATLAB wrapper**,
 The MATLAB wrapper does not need OpenCV to be installed.
 
 
-## 4. All parameters
+## 4 All parameters
 ```
     ./main   [-i <string>]  [-cam <bool>]  [-row1d <int>] 
              [-lambda <float>]  [-alpha <float>]  [-temporal <float>]
