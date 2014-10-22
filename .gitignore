@@ -1,0 +1,9 @@
+.DS_Store
+.cproject
+.project
+images/video_frames
+images_output
+tmp
+main
+examples/matlab/*.mexmaci64
+examples/matlab/*.mexa64
