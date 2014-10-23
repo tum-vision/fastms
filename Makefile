@@ -87,9 +87,9 @@ ifeq ($(USE_CUDA), 1)
     ARGS_NVCC += -ccbin $(GXX)
     ARGS_NVCC += --use_fast_math
     ARGS_NVCC += --compiler-options '$(ARGS_GXX)'
+    #ARGS_NVCC += -gencode arch=compute_11,code=compute_11
+    ARGS_NVCC += -gencode arch=compute_20,code=compute_20
     ARGS_NVCC += -gencode arch=compute_30,code=\"compute_30,sm_30\"
-    #ARGS_NVCC += -gencode arch=compute_10,code=compute_10
-    #ARGS_NVCC += -gencode arch=compute_20,code=compute_20
     #ARGS_NVCC += -gencode arch=compute_35,code=\"compute_35,sm_35\"
     #ARGS_NVCC += --ptxas-options=-v
     COMMAND_NVCC_COMPILE=$(NVCC) -c -o $@ $< $(ARGS_NVCC) $(INCLUDES) $(DEFINES) 

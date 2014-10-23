@@ -43,9 +43,10 @@ Or run any of the examples, e.g.
 ### CUDA:
 
 To use the **GPU implementation**, [CUDA](https://developer.nvidia.com/cuda-downloads) must be installed and *nvcc* must be in the current PATH.
+The code is generated for NVIDIA GPUs of [compute capability](https://developer.nvidia.com/cuda-gpus) at least 2.0 by default.
+If your GPU is older, uncomment the corresponding *gencode* line in the *Makefile*.
 
-*Note: You can still compile and use the *
-**_CPU version_**, *even if CUDA is not available.*
+*Note: You can still compile and use the* **_CPU version_**, *even if CUDA is not available.*
 
 ### OpenCV
 
@@ -64,7 +65,7 @@ The code was tested on two different systems:
 
 - Ubuntu 12.04 (Precise) with CUDA 5.5 and OpenCV 2.3.1,
 - Mac OS X 10.9 (Mavericks) and 10.10 (Yosemite) with CUDA 6.5 and OpenCV 2.4.8.
-- - the CPU-only version (disable *USE_CUDA* in the Makefile) can be compiled with either *clang* or *gcc* of any version.
+- - the CPU-only version (disable *USE_CUDA* in the *Makefile*) can be compiled with either *clang* or *gcc* of any version.
 - - the CUDA version compiled only with *gcc* on our test system, namely with *gcc-4.2* (installed through [homebrew](http://brew.sh)). Note that OpenCV needs to be compiled with the same version of *gcc*.
 
 
