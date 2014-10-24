@@ -65,8 +65,8 @@ The code was tested on two different systems:
 
 - Ubuntu 12.04 (Precise) with CUDA 5.5 and OpenCV 2.3.1,
 - Mac OS X 10.9 (Mavericks) and 10.10 (Yosemite) with CUDA 6.5 and OpenCV 2.4.8.
-- - the CPU-only version (disable *USE_CUDA* in the *Makefile*) can be compiled with either *clang* or *gcc* of any version.
-- - the CUDA version compiled only with *gcc* on our test system, namely with *gcc-4.2* (installed through [homebrew](http://brew.sh)). Note that OpenCV needs to be compiled with the same version of *gcc*.
+ - the CPU-only version (disable *USE_CUDA* in the *Makefile*) can be compiled with either *clang* or *gcc* of any version.
+ - the CUDA version compiled only with *gcc* on our test system, namely with *gcc-4.2* (installed through [homebrew](http://brew.sh)). Note that OpenCV needs to be compiled with the same version of *gcc*.
 
 
 
@@ -84,7 +84,7 @@ If you specify only one image, e.g.
 
         ./main -i images/hepburn.png
 
-you will get a GUI where one can change the main regularization parameters *lambda* and *alpha of the Mumford-Shah model, and see the results immediatelly.
+you will get a GUI where one can change the main regularization parameters *lambda* and *alpha of the Mumford-Shah model, and see the results immediately.
 
 ### Hotkeys
 - <kbd>e</kbd>: Toggle edges highlighting on/off
@@ -97,7 +97,7 @@ you will get a GUI where one can change the main regularization parameters *lamb
 
 You can provide more than one image if you like, e.g.
 
-        ./main -i images/hepburn.png -i images/gaudi.png
+        ./main -i images/hepburn.png images/gaudi.png
 
         ./main -i images/*.png
 
@@ -278,7 +278,7 @@ The MATLAB wrapper does not need OpenCV to be installed.
     Display usage information and exit.
 ```
 
-> #### "bool" parameters are set to:
+> ##### "bool" parameters are set to:
 - *true* for values "1", "true", or "yes", or if the parameter is specified without a value (e.g. only "-weight")
 - *false* for values "0", "false", or "no".
 
